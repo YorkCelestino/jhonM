@@ -1,0 +1,75 @@
+<style type="text/css">
+
+  .required{
+    color:red;
+  }
+  body{
+        background-size: cover;
+    }
+    .login-form{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        background: white; 
+    }
+
+    .title{
+        background: #007bbf;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        border-radius: 0px 0px 10px 10px;
+    }
+</style>
+
+<div class="container"style="min-height: 80%">
+    
+        <div class="row">
+            <div class="login-form col-md-4 offset-4 ">
+                <h1 class="title">Registro</h1>
+                <form action="/api/users" method="POST" class="form-goup">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name"><i class="fa fa-user" aria-hidden="true"></i> Nombre <span class="required">*</span> </label>
+                                    <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Nombre" required>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="lastname"><i class="fas fa-user-alt " aria-hidden="true"></i> Apellido <span class="required">*</span> </label>
+                                    <input type="text" class="form-control" name="lastname" id="lastname" aria-describedby="helpId" placeholder="Apellido" required>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                      
+
+                        <div class="form-group">
+                        <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> Email <span class="required">*</span> </label>
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="username"><i class="fa fa-user" aria-hidden="true"></i> Usuario <span class="required">*</span> </label>
+                        <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId" placeholder="Usuario" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"><i class="fa fa-key" aria-hidden="true"></i> Contraseña <span class="required">*</span> </label>
+                            <input type="text" class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="Contraseña" required>
+                        </div>
+
+                        
+                        <input type="hidden" name="role" id="" value="5d98e4db84d159171c04351a" >
+
+                        <button type="submit"  name="" id="" class="btn btn-primary btn-lg btn-block">Registrarme</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
